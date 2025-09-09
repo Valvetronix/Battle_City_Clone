@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
+[ext_resource path="res://Frames/Tank-yellow.tres" type="SpriteFrames" id=2]
+
+[node name="Player" type="KinematicBody2D"]
+script = ExtResource( 1 )
+shoot_offset = 8.0
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -7, -5, -2, -5, -2, -7, 2, -7, 2, -5, 7, -5, 7, 7, -7, 7 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = ExtResource( 2 )
+animation = "move_left"

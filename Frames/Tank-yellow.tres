@@ -1,0 +1,19 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=2]
+
+[ext_resource path="res://Assets/Tank-yellow-left-2.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Tank-yellow-up-1.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Tank-yellow-up-2.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Tank-yellow-left-1.png" type="Texture" id=4]
+
+[resource]
+animations = [ {
+"frames": [ ExtResource( 4 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "move_left",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "move_up",
+"speed": 24.0
+} ]
