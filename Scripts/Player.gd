@@ -57,9 +57,8 @@ func shoot():
 	print("Pew!")
 
 func switch_animation(animation_name):
-	if sprite.animation != animation_name:
-		sprite.animation = animation_name
-		sprite.play()
+	sprite.animation = animation_name
+	sprite.play()
 	return
 
 func update_animation():
